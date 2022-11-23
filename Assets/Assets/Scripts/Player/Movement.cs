@@ -9,14 +9,13 @@ public class Movement : MonoBehaviour
     private RaycastHit hit;
     private NavMeshAgent agent;
     private string groundTag = "Ground";
+    private string catTag = "Cat";
     
-    // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -29,7 +28,12 @@ public class Movement : MonoBehaviour
                 {
                     agent.SetDestination(hit.point);   
                 }
+                if (hit.collider.CompareTag(catTag))
+                {
+                    Debug.Log("cat click");
+                }
             }
+
         }
     }
 }
