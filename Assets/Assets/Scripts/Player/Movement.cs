@@ -30,6 +30,7 @@ public class Movement : MonoBehaviour
                 }
                 if (hit.collider.CompareTag(catTag))
                 {
+                    agent.SetDestination(hit.point);
                     Debug.Log("cat click");
                 }
             }
