@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class Movement : MonoBehaviour
 {
     public Camera camera;
+    public Animator agentAnimator;
     private RaycastHit hit;
     private NavMeshAgent agent;
     private string groundTag = "Ground";
@@ -35,6 +36,14 @@ public class Movement : MonoBehaviour
                 }
             }
 
+        }
+        if (agent.velocity != Vector3.zero)
+        {
+            agentAnimator.SetBool("isWalking", true);
+        }
+        else if (agent.velocity == Vector3.zero)
+        {
+            agentAnimator.SetBool("isWalking", false);
         }
     }
 }
