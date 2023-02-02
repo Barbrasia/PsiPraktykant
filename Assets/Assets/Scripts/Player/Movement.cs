@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     private string groundTag = "Ground";
     private string catTag = "Cat";
     
-    void Start()
+    void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
     }
