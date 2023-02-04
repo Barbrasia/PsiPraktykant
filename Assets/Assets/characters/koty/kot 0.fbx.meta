@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 051170e1eb609a040adc6976f47ec1b1
+guid: 2cb71a207f7ef7b45bf43d544976ee89
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -8,42 +8,42 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #54
-    second: {fileID: 2100000, guid: d8192c607cdf05c49a9ffd18c0f1c084, type: 2}
+    second: {fileID: 2100000, guid: c173ae8faf8f35e4b8739863272b65eb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #56
-    second: {fileID: 2100000, guid: 4c44979845d4b1a4cb38fd610fe72fc5, type: 2}
+    second: {fileID: 2100000, guid: 66decd0651c8e634593ac2e92c921955, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #57
-    second: {fileID: 2100000, guid: 51b369456f9813c4b97ea51357079312, type: 2}
+    second: {fileID: 2100000, guid: 4228e2cc6a67c8c409274339eb3dbb3e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #58
-    second: {fileID: 2100000, guid: eaf35e64c0adb3444aafd4720f772a6e, type: 2}
+    second: {fileID: 2100000, guid: 66bbe16f83f039e4c93f6f28b3f4279b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #59
-    second: {fileID: 2100000, guid: fdd44548fd5652d4093b7c15619f4524, type: 2}
+    second: {fileID: 2100000, guid: 2f8dda5c71e728248805b04757bf656f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material #71
-    second: {fileID: 2100000, guid: d652bca6d60f77248a5b12d89588e0b8, type: 2}
+    second: {fileID: 2100000, guid: 675ed63c987cd4b44af8968307d413de, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material #74
-    second: {fileID: 2100000, guid: 1a900477898d0e7429549df7701fb437, type: 2}
+      name: Material #72
+    second: {fileID: 2100000, guid: ae958bf9b0a1d4148bbd445ae5d51dd7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material #75
-    second: {fileID: 2100000, guid: 87914d9d9daee8a4db9b0e216fe4ac90, type: 2}
+      name: Material #73
+    second: {fileID: 2100000, guid: 20eedecba199dd443839a6630394f9c3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -64,7 +64,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -116,11 +116,81 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 1
+  importAnimation: 0
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: kot 0(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "g\u0142owa"
+      parentName: kot 0(Clone)
+      position: {x: 8.994275, y: -13.200961, z: 0.15994896}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: noga prawa
+      parentName: kot 0(Clone)
+      position: {x: -0.1659578, y: -0.4885559, z: -0.9808825}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "noga prawa d\xF3\u0142"
+      parentName: noga prawa
+      position: {x: 0.003594463, y: -0.009311256, z: -0.98734385}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: noga lewa
+      parentName: kot 0(Clone)
+      position: {x: -0.16072752, y: 0.48475307, z: -0.98974067}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "noga lewa d\xF3\u0142"
+      parentName: noga lewa
+      position: {x: 0.00012029304, y: 0.005239518, z: -0.9804597}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ogon 1
+      parentName: kot 0(Clone)
+      position: {x: -0.8230738, y: 0.0008165441, z: -0.9980302}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ogon 2
+      parentName: ogon 1
+      position: {x: -0.49893287, y: 0, z: 0.16043533}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ogon 3
+      parentName: ogon 2
+      position: {x: 0.01356367, y: 0, z: 0.66590655}
+      rotation: {x: -0, y: 0.15375853, z: -0, w: 0.98810846}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ogon 4
+      parentName: ogon 3
+      position: {x: -0.34376365, y: 0, z: 0.33877593}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ogon 5
+      parentName: ogon 4
+      position: {x: 0.0042400146, y: 0, z: 0.64830786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ogon6
+      parentName: ogon 5
+      position: {x: -0.66464, y: 0, z: -0.006096133}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: reka lewa
+      parentName: kot 0(Clone)
+      position: {x: -0.1645712, y: 1.1531813, z: 1.1479323}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: reka prawa
+      parentName: kot 0(Clone)
+      position: {x: -0.16273971, y: -1.1521027, z: 1.1555736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5

@@ -9,10 +9,10 @@ public class BotController : MonoBehaviour
     public Vector3 destination;
     internal Vector3 startPosition;
     public float waitTime = 5f;
-    public float randomWaitMin = 10f;
-    public float randomWaitMax = 60f;
-    private bool moving = false;
-    private int currentBotIndex = 0;
+    public float randomWaitMin = 3f;
+    public float randomWaitMax = 15f;
+    private bool ismoving = false;
+    private int currentBotIndex = -1;
 
     void Start()
     {
@@ -28,7 +28,7 @@ public class BotController : MonoBehaviour
         while (true)
         {
             CatInteractable currentBot = bots[currentBotIndex];
-            if (!moving)
+            if (!ismoving)
             {
                 bot.startPosition = bot.transform.position;
                 bool allBotsBack = true;
@@ -42,7 +42,7 @@ public class BotController : MonoBehaviour
                 }
                 if (allBotsBack)
                 {
-                    moving = true;
+                    ismoving = true;
                     bot.agent.destination = destination;
                     while (bot.agent.remainingDistance >= bot.agent.stoppingDistance)
                     {
@@ -56,7 +56,7 @@ public class BotController : MonoBehaviour
                     }
                     float randomWaitTime = Random.Range(randomWaitMin, randomWaitMax);
                     yield return new WaitForSeconds(randomWaitTime);
-                    moving = false;
+                    ismoving = false;
                     currentBotIndex = (currentBotIndex + 1) % bots.Length;
                 }
                 else
